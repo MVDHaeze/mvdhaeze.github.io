@@ -1,6 +1,5 @@
 .container {
   width: inherit;
-  margin: 0 auto;
   background: inherit;
 }
 
@@ -25,12 +24,12 @@ Main components
   border-radius: 40%;
 }
 
-.cd-timeline-block {
+.timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 3em 0;
 }
 
-.cd-timeline-img {
+.timeline-icon {
   position: absolute;
   left: 11px;
   width: 30px;
@@ -40,29 +39,31 @@ Main components
   background: #ee8900;
 }
 
-.cd-timeline-content {
+.timeline-content {
   position: relative;
   margin-left: 60px;
   border-radius: 5px;
+  color: inherit;
 }
 
-.cd-timeline-content h2 {
-  color: inherit;
-  margin-bottom: 2px;
-}
-.cd-timeline-content p,
-.cd-timeline-content p {
-  margin-bottom: 1em;
+.timeline-content p {
+  margin: auto;
   line-height: 1.6;
 }
 
-@media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
-  }
+.timeline-detail h2 {
+  margin-bottom: 5px !important;
+}
+
+.timeline-detail p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.timeline-description p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
