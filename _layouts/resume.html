@@ -95,6 +95,16 @@ layout: page
         box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
     }
 
+    #period {
+        background: var(--sidebar-bg);
+        font-size: 12px;
+        border-radius: 2px;
+        display: inline-block;
+        color: inherit;
+        text-align: center;
+        box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    }
+
     .content-description {
         font-size: 12px;
         padding: 0;
@@ -120,6 +130,15 @@ layout: page
         padding-right: 5px;
     }
 </style>
+<script>
+    var diffMonth = 10
+    var diffYear = 1
+    var periodTime = `${diffYear} yr ${diffMonth} mos`
+    window.onload = function () {
+
+        document.getElementById('period').innerHTML = periodTime;
+    };
+</script>
 <div>
     <section id="timeline" class="container">
         <!-- timeline-block -->
@@ -134,15 +153,16 @@ layout: page
                     <ul class="content-description">
 
                         <li><i class="fas fa-calendar-alt"></i> May 2020 <span>&#8212;</span> Present
-                            <span>&#8231;</span> 1 yr 10
-                            mos
+                            <span>&#8231;</span>
+                            <p id="period"></p>
                         </li>
                     </ul>
 
                 </div>
                 <div class="timeline-description">
                     <p>
-                        I could stop working... So I did. Best. Decision. Ever.</br>See the <a href="/about">about section</a>
+                        I could stop working... So I did. Best. Decision. Ever.</br>See the <a href="/about">about
+                            section</a>
                         for more information!
                     </p>
                 </div>
@@ -397,7 +417,7 @@ layout: page
                 <div class="timeline-detail">
                     <h2>External Consultant - Finance</h2>
                     <ul class="content-description">
-                        <li><i class="fas fa-building"></i>Famous Clothes SA (Caméléon)  </li>
+                        <li><i class="fas fa-building"></i>Famous Clothes SA (Caméléon) </li>
                         <li><i class="fas fa-briefcase"></i>Internship</li>
                         <li><i class="fas fa-calendar-alt"></i>Oct 2016 <span>&#8212;</span> Jan 2017
                             <span>&#8231;</span> 4 mos
@@ -448,7 +468,8 @@ layout: page
                 <div class="timeline-detail">
                     <h2>Solvay Brussels School - Economics & Management</h2>
                     <ul class="content-description">
-                        <li><i class="fas fa-briefcase"></i>M Sc. - Master of Science, Business Engineering - Advanced Management</li>
+                        <li><i class="fas fa-briefcase"></i>M Sc. - Master of Science, Business Engineering - Advanced
+                            Management</li>
                         <li><i class="fas fa-calendar-alt"></i>2015 <span>&#8212;</span> 2017
                         </li>
                         <li><i class="fas fa-location-arrow"></i>Brussels Area, Belgium</li>
