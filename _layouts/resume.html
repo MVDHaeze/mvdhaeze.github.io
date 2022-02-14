@@ -131,8 +131,16 @@ layout: page
     }
 </style>
 <script>
-    var diffMonth = 10
-    var diffYear = 1
+    var cdate = new Date()
+    var hdate = new Date("05/01/2020")
+    var allMonths = cdate.getMonth() - hdate.getMonth() + (12 * (cdate.getFullYear() - hdate.getFullYear()));
+    var diffYear = cdate.getFullYear() - hdate.getFullYear();
+    var diffMonth = cdate.getMonth() - hdate.getMonth();
+    if (diffMonth < 0) {
+        diffYear--;
+        diffMonth = diffMonth + 12;
+    }
+
     var periodTime = `${diffYear} yr ${diffMonth} mos`
     window.onload = function () {
 
